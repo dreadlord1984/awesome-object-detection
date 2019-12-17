@@ -1,10 +1,13 @@
 # object-detection
 
-This is a list of awesome articles about object detection.
+[TOC]
+
+This is a list of awesome articles about object detection. If you want to read the paper according to time, you can refer to [Date](Date.md).
 
 - R-CNN
 - Fast R-CNN
 - Faster R-CNN
+- Mask R-CNN
 - Light-Head R-CNN
 - Cascade R-CNN
 - SPP-Net
@@ -23,22 +26,45 @@ This is a list of awesome articles about object detection.
 - FPN
 - DSOD
 - RetinaNet
-- MegNet
+- MegDet
 - RefineNet
 - DetNet
 - SSOD
 - CornerNet
+- M2Det
 - 3D Object Detection
 - ZSD（Zero-Shot Object Detection）
 - OSD（One-Shot object Detection）
 - Weakly Supervised Object Detection
 - Softer-NMS
 - 2018
+- 2019
 - Other
 
 Based on handong1587's github: https://handong1587.github.io/deep_learning/2015/10/09/object-detection.html
 
 # Survey
+
+**Imbalance Problems in Object Detection: A Review**
+
+- intro: under review at TPAMI
+- arXiv: <https://arxiv.org/abs/1909.00169>
+
+**Recent Advances in Deep Learning for Object Detection**
+
+- intro: From 2013 (OverFeat) to 2019 (DetNAS)
+- arXiv: <https://arxiv.org/abs/1908.03673>
+
+**A Survey of Deep Learning-based Object Detection**
+
+- intro：From Fast R-CNN to NAS-FPN
+
+- arXiv：<https://arxiv.org/abs/1907.09408>
+
+**Object Detection in 20 Years: A Survey**
+
+- intro：This work has been submitted to the IEEE TPAMI for possible publication
+- arXiv：<https://arxiv.org/abs/1905.05055>
 
 **《Recent Advances in Object Detection in the Age of Deep Convolutional Neural Networks》**
 
@@ -144,6 +170,15 @@ Based on handong1587's github: https://handong1587.github.io/deep_learning/2015/
 
 - intro: CVPR 2018. ETH Zurich & ESAT/PSI
 - arxiv: <https://arxiv.org/abs/1803.03243>
+
+## Mask R-CNN
+
+- arxiv: <http://arxiv.org/abs/1703.06870>
+- github(Keras): https://github.com/matterport/Mask_RCNN
+- github(Caffe2): https://github.com/facebookresearch/Detectron
+- github(Pytorch): <https://github.com/wannabeOG/Mask-RCNN>
+- github(MXNet): https://github.com/TuSimple/mx-maskrcnn
+- github(Chainer): https://github.com/DeNA/Chainer_Mask_R-CNN
 
 ## Light-Head R-CNN
 
@@ -325,12 +360,17 @@ Based on handong1587's github: https://handong1587.github.io/deep_learning/2015/
 - paper:https://pjreddie.com/media/files/papers/YOLOv3.pdf
 - code: <https://pjreddie.com/darknet/yolo/>
 - github(Official):https://github.com/pjreddie/darknet
+- github:https://github.com/mystic123/tensorflow-yolo-v3
 - github:https://github.com/experiencor/keras-yolo3
 - github:https://github.com/qqwweee/keras-yolo3
 - github:https://github.com/marvis/pytorch-yolo3
 - github:https://github.com/ayooshkathuria/pytorch-yolo-v3
 - github:https://github.com/ayooshkathuria/YOLO_v3_tutorial_from_scratch
 - github:https://github.com/eriklindernoren/PyTorch-YOLOv3
+- github:https://github.com/ultralytics/yolov3
+- github:https://github.com/BobLiu20/YOLOv3_PyTorch
+- github:https://github.com/andy-yun/pytorch-0.4-yolov3
+- github:https://github.com/DeNA/PyTorch_YOLOv3
 
 ## YOLT
 
@@ -792,7 +832,19 @@ https://github.com/Robert-JunWang/Pelee
 - arXiv: https://arxiv.org/abs/1808.01244
 - github: <https://github.com/umich-vl/CornerNet>
 
+## M2Det
+
+**M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network**
+
+- intro: AAAI 2019
+- arXiv: https://arxiv.org/abs/1811.04533
+- github: https://github.com/qijiezhao/M2Det
+
 ## 3D Object Detection
+
+**3D Backbone Network for 3D Object Detection**
+
+- arXiv: https://arxiv.org/abs/1901.08373
 
 **LMNet: Real-time Multiclass Object Detection on CPU using 3D LiDARs**
 
@@ -800,7 +852,7 @@ https://github.com/Robert-JunWang/Pelee
 - github: https://github.com/CPFL/Autoware/tree/feature/cnn_lidar_detection
 
 
-## ZSD
+## ZSD（Zero-Shot Object Detection）
 
 **Zero-Shot Detection**
 
@@ -820,7 +872,11 @@ https://github.com/Robert-JunWang/Pelee
 
 - arxiv: https://arxiv.org/abs/1805.06157
 
-## OSD
+## OSD（One-Shot Object Detection）
+
+**Comparison Network for One-Shot Conditional Object Detection**
+
+- arXiv: https://arxiv.org/abs/1904.02317
 
 **One-Shot Object Detection**
 
@@ -854,7 +910,140 @@ RepMet: Representative-based metric learning for classification and one-shot obj
 - arXiv: https://arxiv.org/abs/1809.08545
 - github: https://github.com/yihui-he/softer-NMS
 
+## 2019
+
+**Feature Selective Anchor-Free Module for Single-Shot Object Detection**
+
+- intro: CVPR 2019
+
+- arXiv: https://arxiv.org/abs/1903.00621
+
+**Object Detection based on Region Decomposition and Assembly**
+
+- intro: AAAI 2019
+
+- arXiv: https://arxiv.org/abs/1901.08225
+
+**Bottom-up Object Detection by Grouping Extreme and Center Points**
+
+- intro: one stage 43.2% on COCO test-dev
+- arXiv: https://arxiv.org/abs/1901.08043
+- github: https://github.com/xingyizhou/ExtremeNet
+
+**ORSIm Detector: A Novel Object Detection Framework in Optical Remote Sensing Imagery Using Spatial-Frequency Channel Features**
+
+- intro: IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING
+
+- arXiv: https://arxiv.org/abs/1901.07925
+
+**Consistent Optimization for Single-Shot Object Detection**
+
+- intro: improves RetinaNet from 39.1 AP to 40.1 AP on COCO datase
+
+- arXiv: https://arxiv.org/abs/1901.06563
+
+**Learning Pairwise Relationship for Multi-object Detection in Crowded Scenes**
+
+- arXiv: https://arxiv.org/abs/1901.03796
+
+**RetinaMask: Learning to predict masks improves state-of-the-art single-shot detection for free**
+
+- arXiv: https://arxiv.org/abs/1901.03353
+- github: https://github.com/chengyangfu/retinamask
+
+**Region Proposal by Guided Anchoring**
+
+- intro: CUHK - SenseTime Joint Lab
+- arXiv: https://arxiv.org/abs/1901.03278
+
+**Scale-Aware Trident Networks for Object Detection**
+
+- intro: mAP of **48.4** on the COCO dataset
+- arXiv: https://arxiv.org/abs/1901.01892
+
 ## 2018
+
+**Large-Scale Object Detection of Images from Network Cameras in Variable Ambient Lighting Conditions**
+
+- arXiv: https://arxiv.org/abs/1812.11901
+
+**Strong-Weak Distribution Alignment for Adaptive Object Detection**
+
+- arXiv: https://arxiv.org/abs/1812.04798
+
+**AutoFocus: Efficient Multi-Scale Inference**
+
+- intro: AutoFocus obtains an **mAP of 47.9%** (68.3% at 50% overlap) on the **COCO test-dev** set while processing **6.4 images per second on a Titan X (Pascal) GPU** 
+- arXiv: https://arxiv.org/abs/1812.01600
+
+**NOTE-RCNN: NOise Tolerant Ensemble RCNN for Semi-Supervised Object Detection**
+
+- intro: Google Could
+- arXiv: https://arxiv.org/abs/1812.00124
+
+**SPLAT: Semantic Pixel-Level Adaptation Transforms for Detection**
+
+- intro: UC Berkeley
+- arXiv: https://arxiv.org/abs/1812.00929
+
+**Grid R-CNN**
+
+- intro: SenseTime
+- arXiv: https://arxiv.org/abs/1811.12030
+
+**Deformable ConvNets v2: More Deformable, Better Results**
+
+- intro: Microsoft Research Asia
+
+- arXiv: https://arxiv.org/abs/1811.11168
+
+**Anchor Box Optimization for Object Detection**
+
+- intro: Microsoft Research
+- arXiv: https://arxiv.org/abs/1812.00469
+
+**Efficient Coarse-to-Fine Non-Local Module for the Detection of Small Objects**
+
+- intro: https://arxiv.org/abs/1811.12152
+
+**NOTE-RCNN: NOise Tolerant Ensemble RCNN for Semi-Supervised Object Detection**
+
+- arXiv: https://arxiv.org/abs/1812.00124
+
+**Learning RoI Transformer for Detecting Oriented Objects in Aerial Images**
+
+- arXiv: https://arxiv.org/abs/1812.00155
+
+**Integrated Object Detection and Tracking with Tracklet-Conditioned Detection**
+
+- intro: Microsoft Research Asia
+- arXiv: https://arxiv.org/abs/1811.11167
+
+**Deep Regionlets: Blended Representation and Deep Learning for Generic Object Detection**
+
+- arXiv: https://arxiv.org/abs/1811.11318
+
+ **Gradient Harmonized Single-stage Detector**
+
+- intro: AAAI 2019
+- arXiv: https://arxiv.org/abs/1811.05181
+
+**CFENet: Object Detection with Comprehensive Feature Enhancement Module**
+
+- intro: ACCV 2018
+- github: https://github.com/qijiezhao/CFENet
+
+**DeRPN: Taking a further step toward more general object detection**
+
+- intro: AAAI 2019
+- arXiv: https://arxiv.org/abs/1811.06700
+- github: https://github.com/HCIILAB/DeRPN
+
+**Hybrid Knowledge Routed Modules for Large-scale Object Detection**
+
+- intro: Sun Yat-Sen University & Huawei Noah’s Ark Lab
+- arXiv: https://arxiv.org/abs/1810.12681
+- github: https://github.com/chanyn/HKRM
 
 **《Receptive Field Block Net for Accurate and Fast Object Detection》**
 
@@ -925,3 +1114,10 @@ RepMet: Representative-based metric learning for classification and one-shot obj
 
 - arxiv: https://arxiv.org/abs/1808.05560
 - youtube: https://youtu.be/xCYD-tYudN0
+
+# Detection Toolbox
+
+- [Detectron(FAIR)](https://github.com/facebookresearch/Detectron): Detectron is Facebook AI Research's software system that implements state-of-the-art object detection algorithms, including [Mask R-CNN](https://arxiv.org/abs/1703.06870). It is written in Python and powered by the [Caffe2](https://github.com/caffe2/caffe2) deep learning framework.
+- [Detectron2](https://github.com/facebookresearch/detectron2): Detectron2 is FAIR's next-generation research platform for object detection and segmentation.
+- [maskrcnn-benchmark(FAIR)](https://github.com/facebookresearch/maskrcnn-benchmark): Fast, modular reference implementation of Instance Segmentation and Object Detection algorithms in PyTorch.
+- [mmdetection(SenseTime&CUHK)](https://github.com/open-mmlab/mmdetection): mmdetection is an open source object detection toolbox based on PyTorch. It is a part of the open-mmlab project developed by [Multimedia Laboratory, CUHK](http://mmlab.ie.cuhk.edu.hk/).
